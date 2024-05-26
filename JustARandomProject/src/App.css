@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.settingsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.wrapper {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.isCurrentlySequenced {
+  background-color: aquamarine;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.isSelected {
+  background-color: lightblue;
+}
+
+.normal {
+  min-width: 100px;
+  min-height: 100px;
+  border-color: red;
+  border-style: dotted;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.normal:hover {
+  background-color: beige;
+}
